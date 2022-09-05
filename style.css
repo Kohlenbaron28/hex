@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Rubik:wght@400;700&display=swap');
+body {
+    font-family: Antonio;
+}
+.container {
+    border: 1px solid #000;
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hex__colors {
+    border: 1px solid #000;
+    text-align: center;
+}
+.hex__colors h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: colorchange 5s infinite alternate;
+}
+.hex__colors h2 {
+    border: 1px solid #000;
+    font-size: 2rem;
+    margin-top: 15%;
+}
+@keyframes colorchange {
+    0%{
+        color: rgb(143, 51, 228);
+    }
+    20%{
+        color: rgb(89, 51, 228);
+    }
+    40%{
+        color: rgb(51, 110, 228);
+    }
+    60%{
+        color: rgb(51, 169, 228);
+    }
+    80%{
+        color: rgb(51, 228, 204);
+    }
+    100%{
+        color: rgb(95, 228, 51);
+    }
+}
+@media (max-width:480px) {
+    .hex__colors h1 {
+        font-size: 1.5rem;
+        
+    }
+}
